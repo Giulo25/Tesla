@@ -71,14 +71,3 @@ function isInWiew(element) {
 		return false;
 	}
 }
-
-let screenSize;
-
-window.addEventListener("resize", function () {
-	screenSize = window.innerWidth;
-	if (screenSize < 768) {
-		document.querySelector("#section-1").style.backgroundImage =
-			"url('img/cover-1-mobile.jpg')";
-		console.log("ok");
-	}
-});
